@@ -9,7 +9,6 @@ from aiohttp import web
 from pytz import timezone
 from datetime import datetime
 import asyncio
-from plugins.web_support import web_server
 from plugins.file_rename import app
 import pyromod
 
