@@ -19,7 +19,11 @@ class Bot(Client):
             sleep_threshold=15,
         )
 
-    async def start(self):
+    async def on_message(self, message):
+        # Handle incoming messages
+        pass
+
+    async def run(self):
         await super().start()
         me = await self.get_me()
         self.mention = me.mention
@@ -42,11 +46,5 @@ class Bot(Client):
             except:
                 print("Please Make This Is Admin In Your Log Channel")
 
-Bot().run()
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Developer @JishuDeveloper
+if __name__ == "__main__":
+    Bot().run()
