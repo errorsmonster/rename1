@@ -6,20 +6,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "26180065")
-    API_HASH  = os.environ.get("API_HASH", "0a6358307acf8d0d2bf98b6827e0f5c7")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6178923981:AAERLKyhio-zsFesfAcWJDAppeiltUraJCQ") 
+    API_ID    = os.environ.get("API_ID", "22225617")
+    API_HASH  = os.environ.get("API_HASH", "ef16f7597376f1689663304c954e4493")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6836055763:AAG9OscyB2DLPLhhkOJodD-ejeoFCWdx7VY") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","2gb")     
-    DB_URL  = os.environ.get("DB_URL","mongodb+srv://akmonsterprogrammer:S.Aruna1155182089@2gb.nuzfrga.mongodb.net/?retryWrites=true&w=majority")
+    DB_NAME = os.environ.get("DB_NAME","rename")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://akmonsterprogrammer:S.Aruna1155182089@rename.rvuuf55.mongodb.net/?retryWrites=true&w=majority&appName=rename")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/8cd764fbdf3ccd34abe22.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5773687944').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6072149828').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "MrAK_LinkZz") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001842834681"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002161894901"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
